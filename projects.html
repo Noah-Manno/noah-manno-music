@@ -10,34 +10,77 @@
 </head>
 
 <body>
-    <section id="profile-page">
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#about-me-page">About Me</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <section id="projects-page">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#about-me-page">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#contact-me">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    <main>
 
-    <section class="min-height">
-        <section class="profile-container">
-            <div>
-                <h1>My Projects</h1>
-            </div>
-        </section>
-
-    </section>
+        <h1>My Projects</h1>
 
         <section class="slideshow-container">
+
+            <div class="project fade">
+                <div class="numbers">1 / 3</div>
+                <div class="album-container meta">
+                    <div class="album-text">
+                        <h4>Metamorphosis</h4>
+                        <h5>MU Chromatic</h5>
+                        <p class="credits">Arranged, Recorded, and Mixed by: Noah Manno</p>
+                    </div>
+                    <img class="album-covers" src="./assets/images/Metamorphosis.jpg" alt="A butterfly in an album cover called Metamorphosis">
+                </div>
+            </div>
+
+            <div class="project fade">
+                <div class="numbers">2 / 3</div>
+                <div class="album-container techni">
+                    <div class="album-text">
+                        <h4>Technicolor</h4>
+                        <h5>MU Chromatic</h5>
+                        <p class="credits">Arranged, Recorded, and Mixed by: Noah Manno</p>
+                    </div>
+                    <img class="album-covers" src="./assets/images/Technicolor.png" alt="an album called technicolor with a tape record and rainbow theme.">
+                </div>
+            </div>
+
+            <div class="project fade">
+                <div class="numbers">3 / 3</div>
+                <div class="album-container boca">
+                    <div class="album-text">
+                        <h4>Stay</h4>
+                        <h5>Featured on BOCA 2023</h5>
+                        <p class="credits">Arranged, Recorded, and Mixed by: Noah Manno</p>
+                    </div>
+                    <img class="album-covers" src="./assets/images/Boca.jpg" alt="Best of college acapella album">
+                </div>
+            </div>
+
+            <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
         </section>
-        
+        <br>
+
+        <div>
+            <span class="slide-tracker" onclick="currentSlide(1)"></span>
+            <span class="slide-tracker" onclick="currentSlide(2)"></span>
+            <span class="slide-tracker" onclick="currentSlide(3)"></span>
+        </div>
+    
+
+    </main>
+
     </section>
 </body>
