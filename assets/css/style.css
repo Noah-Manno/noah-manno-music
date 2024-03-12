@@ -97,6 +97,20 @@ h1 {
     animation-fill-mode: forwards;
 }
 
+h6 {
+    font-family: var(--font1);
+    font-size: 80px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    box-shadow: 20px 20px 20px black;
+    opacity: 0;
+    animation: openingfade ease 2s;
+    animation-fill-mode: forwards;
+}
+
+
 h2 {
     font-family: var(--font1);
     font-weight: 100;
@@ -227,6 +241,13 @@ p {
     animation-fill-mode: forwards;
 }
 
+.slideshow-container {
+    opacity: 0;
+    animation: openingfade 1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
 .project {
     display: none;
 }
@@ -306,7 +327,7 @@ h5 {
 .back, .forward {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 80%;
     width: auto;
     padding: 20px;
     color: white;
@@ -327,7 +348,7 @@ h5 {
     color: gray;
 }
 
-.slide-tracker {
+.dots {
     cursor: pointer;
     height: 20px;
     width: 20px;
@@ -338,12 +359,13 @@ h5 {
     transition: 0.6s ease;
 }
 
-.active, .slide-tracker:hover {
+.active, .dots:hover {
     background-color: white;
 }
 
 .fade {
-    animation: fade 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
