@@ -26,6 +26,15 @@
     padding-bottom: 5%;
 }
 
+#contact-page {
+    background-image: url(../images/Contactbacking.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-bottom: 5%;
+}
+
 nav ul {
 display: flex;
 flex-wrap: wrap;
@@ -41,7 +50,7 @@ li {
     flex: 2 1 30%;
     text-align: center;
     margin-top: -200%;
-    animation: slide-down 3s;
+    animation: slide-down 1.5s;
     animation-fill-mode: forwards;
 }
 
@@ -95,6 +104,20 @@ h1 {
     animation: openingfade ease 1s;
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
+}
+
+#contact-me-title {
+    font-family: var(--font1);
+    font-size: 80px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    color: white;
+    box-shadow: 20px 20px 20px black;
+    opacity: 0;
+    animation: openingfade ease 1s;
+    animation-fill-mode: forwards;
+    text-align: left;
+    padding-left: 10%;
 }
 
 h6 {
@@ -368,6 +391,70 @@ h5 {
     animation-duration: 1.5s;
 }
 
+#social-media-pics {
+    opacity: 0;
+    animation: openingfade 2s;
+    animation-fill-mode: forwards;
+}
+
+
+.socials {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    transition: filter .1s ease-out;
+}
+
+.socials:hover {
+    filter: drop-shadow(0px 0px 50px white);
+    background-color: var(--light);
+}
+
+.main-text {
+    padding-top: 80px;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    opacity: 0;
+    animation: openingfade 2s;
+    animation-fill-mode: forwards;
+}
+
+.invitation {
+    width: 300px;
+}
+
+#invite {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+}
+
+.contact-list-item {
+    border-bottom: 1px solid white;
+    display: block;
+    color: white;
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: filter .1s ease-out;
+}
+
+.contact-list-item:hover {
+    filter: drop-shadow(0px 0px 20px white);
+    color: gray;
+}
+
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
@@ -387,6 +474,14 @@ h5 {
 }
 
 @media screen and (max-width: 1094px) {
+    .main-text {
+        margin-left: 0;
+    }
+    
+    #contact-me-title {
+        text-align: center;
+        padding: 0;
+    }
     h3 {
         text-align: center;
         padding: 0;
@@ -402,6 +497,40 @@ h5 {
         padding-left: 150px;
     }
 }
+
+@media screen and (max-width: 884px) {
+    #contact-me-title {
+        text-align: center;
+        padding: 0;
+    }
+
+    #social-media-pics {
+        text-align: center;
+    }
+
+    .socials {
+    position: relative;
+    left: 0;
+    }
+
+
+.main-text {
+    margin-left: 0;
+}
+
+.invitation {
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 20px;
+}
+
+.contact-list-item {
+    text-align: center;
+}
+
+}
+
 
 @media screen and (max-width:771px) {
     .profile-container {
