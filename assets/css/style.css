@@ -17,6 +17,15 @@
     background-repeat: no-repeat;
 }
 
+#projects-page {
+    background-image: url(../images/projectspagebackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-bottom: 5%;
+}
+
 nav ul {
 display: flex;
 flex-wrap: wrap;
@@ -218,10 +227,130 @@ p {
     animation-fill-mode: forwards;
 }
 
-.min-height {
-    min-height: 100vh;
+.project {
+    display: none;
 }
 
+.album-container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    padding: 8% 5%;
+    margin: 0% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid gray;
+}
+
+.meta {
+    background-image: url(../images/Metabacking.jpg);
+}
+
+.techni {
+    background-image: url(../images/Technibacking.jpg);
+}
+
+.boca {
+    background-image: url(../images/Staybacking.jpg);
+}
+
+
+
+h4 {
+    font-family: var(--font1);
+    color: white;
+    text-decoration: underline;
+    font-weight: 100;
+    font-size: 60px;
+    text-align: center;
+}
+
+h5 {
+    font-family: var(--font1);
+    color: white;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+}
+
+.credits {
+    text-align: center;
+    padding: 80px;
+    color: white;
+    font-size: 20px;
+}
+
+.album-text {
+    width: 600px;
+}
+
+.album-covers {
+    width: 400px;
+    border: 5px solid white;
+    border-radius: 80px;
+}
+
+.numbers {
+    color: gray;
+    position: relative;
+    padding-left: 3%;
+    margin-left: 4%;
+    top: 8vh;
+    width: 100%;
+}
+
+.back, .forward {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 20px;
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 4px 4px 0;
+    user-select: none;
+}
+
+.forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.back:hover, .forward:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: gray;
+}
+
+.slide-tracker {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 4px;
+    background-color: var(--gray);
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.active, .slide-tracker:hover {
+    background-color: white;
+}
+
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    
+}
 
 @media screen and (max-width: 1111px) {
     .profile-container {
